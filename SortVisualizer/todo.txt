@@ -1,0 +1,51 @@
+﻿
+	/* 
+		Ilk once random sayi ureten bi kod yazmamız lazım
+		1-99 arası mesela 99 sayısı ekranda 99 pixellik bir yüksekliğe sahip olucak
+		v diye bir vector oluşturup random sayıları o vectorde tutucaz
+		sorting algoritmasını yazıcaz
+	*/
+
+	// örnek sorting algorithm
+	/*
+	for (int i = 0; i < v.size(); i++) {
+		for (int j = 0; j < v.size(); j++;) {
+			if (v[j] < v[i]) {
+				std::swap(v[j], v[i]);
+			}
+		}
+	}
+	*/
+
+	/*
+		Bunları yaptıktan sonra SDL ile ekran oluşturucaz ve oluşturduğumuz vectoru çizdiricez
+		i ve j'yi alıp renklendiricez
+	*/
+
+	/*
+		SDL_Window* window;
+		SDL_Renderer* renderer;
+		SDL_CreateWindowAndRenderer(100 * 10, 100 * 10, 0, &window, &renderer);
+		SDL_RenderSetScale(renderer, 10, 10);
+	*/
+
+	/*
+		yeni bi fonksiyon oluşturup v vectorunu çizicez
+		i kırmızı j mavi olabilir
+
+	*/
+
+	v vectorünün içindeki sayıya göre ekranda kaç pixel büyüklüğünde olacağını yazıcaz draw_state fonksiyonun içine
+	// SDL_RendererDrawLine()
+	for (int i : v) {
+	}
+
+	draw_state çağır sorting içinde (çağırmadan önce ekranı siyah yap aşağıdaki kod)
+	SDL_SetRenderDrwaColor(black)
+	RenderClear
+
+	sonra renderPresent + delay(10ms)
+
+
+	eğer index red'e eşitse setRenderColor(red)
+	aynısı blue için
